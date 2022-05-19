@@ -52,14 +52,14 @@ public class View {
 		System.out.println("Items has been scanned" + "\n");
 		totalPrice = contr.getTotalPrice();
 		System.out.println("The price is: " + totalPrice + "\n");
-		System.out.println("The customer with id 661 want a discount based on his age: " + "\n");
+		System.out.println("The customer with id 662 want a discount based on his age: " + "\n");
 		try {
-			contr.calculatePriceAfterDiscount("age", contr.getAccountingSystem().getCustomer("661"));
+			contr.calculatePriceAfterDiscount("age", contr.getAccountingSystem().getCustomer("662"));
 		} catch (DiscountException exc) {
 			System.out.print("User information: Customer with the id " + exc.getCustomerID() + " "
-					+ "is not eligible for a discount!");
+					+ "is not eligible for a discount!"+ "\n");
 			System.out.print("LOG: The customer does not fit in any of the implemented algorithms"
-					+ "for calculating a discount");
+					+ "for calculating a discount"+ "\n" + "\n");
 
 		} catch (InstantiationException exc) {
 			System.out.print("User information: There is no discount of the type you searched for, "
