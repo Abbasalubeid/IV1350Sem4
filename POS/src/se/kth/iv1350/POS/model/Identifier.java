@@ -18,7 +18,7 @@ public class Identifier {
 	 * @param barcode is the unique code that every item has to get identified
 	 */
 	public Identifier(String barcode) {
-		if (barcode.equals("NeedsDataBaseAccess")) {
+		if (barcode.equals("needsDataBaseAccess")) {
 			throw new DatabaseAccessException("The database cannot be accessed");
 		}
 		this.barcode = barcode;
